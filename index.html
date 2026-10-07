@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d777b">
+  <title>GIV YOG — Practice at home</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600&display=swap');
+    :root{font-family:'DM Sans',sans-serif;color:#2f3a33;background:#faf6f0}*{box-sizing:border-box}body{margin:0}.wrap{max-width:1120px;margin:auto;padding:24px}.nav,.brand,footer{display:flex;align-items:center;justify-content:space-between}.brand{justify-content:flex-start;gap:10px;font:600 19px 'Cormorant Garamond';letter-spacing:.15em;color:#0d777b}.brand img{width:42px;height:42px;object-fit:contain}.brand i{color:#c9876b}.login{border:0;background:none;font:500 14px 'DM Sans';cursor:pointer}.hero{min-height:680px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:30px}.eyebrow{text-transform:uppercase;color:#6b7f6a;letter-spacing:.15em;font-size:11px;font-weight:bold}.hero h1,h2{font:600 clamp(58px,8vw,104px)/.8 'Cormorant Garamond';margin:20px 0}.hero h1 em{color:#c9876b}.lead{max-width:440px;line-height:1.7;color:#59645d;font-size:17px}.button{display:inline-block;margin-top:18px;border:0;border-radius:30px;background:#0d777b;color:white;padding:15px 22px;text-decoration:none;font-weight:600}.orb{width:min(330px,70vw);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:#e8dccb;box-shadow:inset 0 0 0 22px #f5ede2}.orb img{width:86%;animation:float 6s infinite ease-in-out}@keyframes float{50%{transform:translateY(-10px)}}.about{border-top:1px solid #d9d1c6;border-bottom:1px solid #d9d1c6;padding:30px 8% 42px}.about h2,.promise h2,.steps h2{font-size:55px;line-height:.9}.about p,.steps p{line-height:1.75;color:#59645d;max-width:620px}.steps{margin-top:75px;background:#e8dccb;padding:90px max(24px,calc((100vw - 1100px)/2));display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.flow{list-style:none;padding:0;margin:0}.flow li{display:grid;grid-template-columns:42px 1fr;gap:12px;padding:17px 0;border-bottom:1px solid #cfc2ae}.flow b{font:600 22px 'Cormorant Garamond';display:block}.flow small{font-size:12px;color:#687269}.promise{text-align:center;padding:105px 20px}.promise h2{max-width:620px;margin:16px auto}.pills span{display:inline-block;border:1px solid #a8b5a0;border-radius:30px;padding:9px 13px;margin:4px;font-size:12px}.mudra{width:min(235px,56vw);height:auto;display:block;margin:0 auto 18px;filter:drop-shadow(0 12px 18px rgba(47,58,51,.12))}dialog{border:0;border-radius:28px;padding:0;max-width:min(460px,calc(100vw - 32px));box-shadow:0 24px 70px rgba(47,58,51,.3)}dialog::backdrop{background:rgba(47,58,51,.5);backdrop-filter:blur(4px)}.auth{padding:34px}.auth h2{font-size:48px}.auth label{display:block;margin:17px 0 7px;font-size:13px;font-weight:600}.auth input{width:100%;padding:13px;border:1px solid #cfc2ae;border-radius:12px;font:inherit}.auth .button{width:100%;cursor:pointer}.auth-close{float:right;border:0;background:none;font-size:22px;cursor:pointer;color:#59645d}.auth-status{min-height:22px;font-size:13px;color:#59645d;margin:14px 0 0}.auth-note{font-size:12px;line-height:1.5;color:#687269}.mudra{width:min(235px,56vw);height:auto;display:block;margin:0 auto 18px;filter:drop-shadow(0 12px 18px rgba(47,58,51,.12))}footer{border-top:1px solid #d9d1c6;padding:22px 0;font-size:12px;color:#6b7f6a}@media(max-width:700px){.hero,.steps{grid-template-columns:1fr}.hero{min-height:auto;padding:60px 0}.orb{width:190px}.steps{padding:65px 24px;gap:25px}.hero h1{font-size:70px}}
+  </style>
+  <style>
+    .auth-switch{margin-top:16px;text-align:center;font-size:13px}.auth-switch button{border:0;background:none;color:#0d777b;font:600 13px 'DM Sans';text-decoration:underline;cursor:pointer}.auth-consent{display:flex!important;align-items:flex-start;gap:9px;margin-top:17px!important;font-size:12px!important;font-weight:400!important;line-height:1.45}.auth-consent[hidden]{display:none!important}.auth-consent input{width:auto;margin-top:2px}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <nav class="nav">
+      <div class="brand"><img src="./public/brand/giv-yog-logo.png" alt="GIV YOG"><span>GIV <i>YOG</i></span></div>
+      <button class="login" type="button" data-open-auth>Log in</button>
+    </nav>
+    <section class="hero">
+      <div><p class="eyebrow">A practice, in your own space</p><h1>“Breathe.<br>Arrive.<br><em>Begin again.</em>”</h1><p class="lead">A gentle, teacher-guided yoga practice for your home—one breath, one movement, one day at a time.</p><button class="button" type="button" data-open-auth>Start your private practice →</button></div>
+      <div class="orb"><img src="./public/brand/giv-yog-logo.png" alt="GIV YOG logo"></div>
+    </section>
+    <section class="about" id="about">
+      <p class="eyebrow">With Khushboo Makhija</p><h2>A steady way home to yourself.</h2><p>I am Khushboo Makhija, a certified yoga teacher trained at Swasth Bharat Yoga Kendra (SBYK), Ulhasnagar. My teacher training began in February 2026, grounding my approach in asana, pranayam, meditation and yoga knowledge.</p><p>GIV YOG brings that learning into your home through calm, clearly guided practice that respects your body, breath and individual needs.</p>
+    </section>
+  </main>
+  <section class="steps">
+    <div><p class="eyebrow">A thoughtful beginning</p><h2>Made for real, busy days.</h2><p>Your personal practice space opens after a simple, private sign-in. You will first share the health details you want your teacher to know, then receive guidance suited to your day.</p></div>
+    <ol class="flow"><li><span>01</span><div><b>Create your private account</b><small>Your practice and notes stay personal.</small></div></li><li><span>02</span><div><b>Share what your body needs</b><small>Choose conditions or injuries so safety guidance can be shown first.</small></div></li><li><span>03</span><div><b>Follow your home guide</b><small>Member practices include posture illustrations, clear steps, breath, duration and safety notes.</small></div></li></ol>
+  </section>
+  <section class="promise">
+    <img class="mudra" src="./public/illustrations/gyan-mudra-ornament-v1.png" alt="Decorative Gyan mudra and lotus artwork">
+    <p class="eyebrow">Made for home</p><h2>Guidance that meets you where you are.</h2><div class="pills"><span>Private health profile</span><span>Safety before every pose</span><span>Practice at your pace</span></div>
+  </section>
+  <footer class="wrap"><div class="brand"><img src="./public/brand/giv-yog-logo.png" alt="GIV YOG"><span>GIV <i>YOG</i></span></div><p>© 2026 GIV YOG · Practice gently. Listen closely.</p></footer>
+  <dialog id="auth-dialog">
+    <form class="auth" id="auth-form">
+      <button class="auth-close" type="button" aria-label="Close login" onclick="document.getElementById('auth-dialog').close()">×</button>
+      <p class="eyebrow">GIV YOG members</p><h2 id="auth-title">Welcome in.</h2>
+      <p class="auth-note" id="auth-note">Log in to continue to your guided home practice.</p>
+      <label for="auth-email">Email address</label><input id="auth-email" type="email" autocomplete="email" required>
+      <label for="auth-password">Password</label><input id="auth-password" type="password" autocomplete="current-password" minlength="6" required>
+      <label class="auth-consent" id="auth-consent-row" hidden><input id="auth-consent" type="checkbox"><span>I understand that yoga is not risk-free and I will stop if I feel pain, dizziness or breathlessness.</span></label>
+      <button class="button" id="auth-submit" type="submit">Log in securely</button>
+      <p class="auth-switch"><span id="auth-switch-copy">New to GIV YOG?</span> <button id="auth-switch" type="button">Create account</button></p>
+      <p class="auth-status" id="auth-status" role="status"></p>
+    </form>
+  </dialog>
+  <script src="./public/giv-yog-config.js"></script>
+  <script>
+    const authDialog = document.getElementById('auth-dialog');
+    let authMode = 'signin';
+    const authTitle = document.getElementById('auth-title');
+    const authNote = document.getElementById('auth-note');
+    const authSubmit = document.getElementById('auth-submit');
+    const authSwitch = document.getElementById('auth-switch');
+    const authSwitchCopy = document.getElementById('auth-switch-copy');
+    const consentRow = document.getElementById('auth-consent-row');
+    const consent = document.getElementById('auth-consent');
+    function renderAuthMode() {
+      const signUp = authMode === 'signup';
+      authTitle.textContent = signUp ? 'Begin gently.' : 'Welcome in.';
+      authNote.textContent = signUp ? 'Create your private account. We will ask about health needs only after your email is confirmed.' : 'Log in to continue to your guided home practice.';
+      authSubmit.textContent = signUp ? 'Create my account' : 'Log in securely';
+      authSwitchCopy.textContent = signUp ? 'Already have an account?' : 'New to GIV YOG?';
+      authSwitch.textContent = signUp ? 'Log in' : 'Create account';
+      consentRow.hidden = !signUp;
+      consent.required = signUp;
+      document.getElementById('auth-password').autocomplete = signUp ? 'new-password' : 'current-password';
+    }
+    document.querySelectorAll('[data-open-auth]').forEach(button => button.addEventListener('click', () => authDialog.showModal()));
+    authSwitch.addEventListener('click', () => { authMode = authMode === 'signup' ? 'signin' : 'signup'; renderAuthMode(); });
+    document.getElementById('auth-form').addEventListener('submit', async event => {
+      event.preventDefault();
+      const status = document.getElementById('auth-status');
+      const config = window.GIV_YOG_SUPABASE || {};
+      if (!config.url || !config.anonKey) {
+        status.textContent = 'Secure sign-in is being connected. Add this site’s Supabase URL and public anon key to activate accounts.';
+        return;
+      }
+      if (authMode === 'signup' && !consent.checked) { status.textContent = 'Please read and accept the safety notice before creating your account.'; return; }
+      status.textContent = authMode === 'signup' ? 'Creating your account…' : 'Signing you in…';
+      const email = document.getElementById('auth-email').value;
+      const password = document.getElementById('auth-password').value;
+      try {
+        const endpoint = authMode === 'signup' ? '/auth/v1/signup' : '/auth/v1/token?grant_type=password';
+        const body = {email,password};
+        const response = await fetch(config.url + endpoint, {method:'POST',headers:{'apikey':config.anonKey,'Content-Type':'application/json'},body:JSON.stringify(body)});
+        const result = await response.json();
+        if (!response.ok) throw new Error(result.error_description || result.msg || 'Could not sign in.');
+        if (authMode === 'signup') { status.textContent = 'Check your email to confirm your account, then return here to log in.'; return; }
+        localStorage.setItem('giv_yog_session', JSON.stringify(result));
+        status.textContent = 'Welcome back. Your practice space is opening…';
+        setTimeout(() => { window.location.hash = 'member-area'; authDialog.close(); }, 700);
+      } catch (error) { status.textContent = error.message; }
+    });
+  </script>
+</body>
+</html>
