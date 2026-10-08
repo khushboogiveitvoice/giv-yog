@@ -105,9 +105,14 @@
         if (authMode === 'signup') { status.textContent = 'Check your email to confirm your account, then return here to log in.'; return; }
         localStorage.setItem('giv_yog_session', JSON.stringify(result));
         status.textContent = 'Welcome back. Your practice space is opening…';
-        setTimeout(() => { window.location.hash = 'member-area'; authDialog.close(); }, 700);
+        setTimeout(() => { window.location.href = './member.html'; }, 700);
       } catch (error) { status.textContent = error.message; }
     });
+    const confirmation = new URLSearchParams(window.location.hash.slice(1));
+    if (confirmation.get('access_token')) {
+      localStorage.setItem('giv_yog_session', JSON.stringify({access_token: confirmation.get('access_token'), refresh_token: confirmation.get('refresh_token')}));
+      window.location.replace('./member.html');
+    }
   </script>
 </body>
 </html>
