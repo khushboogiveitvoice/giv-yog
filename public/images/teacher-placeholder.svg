@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait space for Khushboo Makhija</title>
+  <desc id="desc">A warm cream and sage placeholder for a teacher portrait.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F5E8DC"/><stop offset="1" stop-color="#DCE9E0"/></linearGradient>
+  </defs>
+  <rect width="640" height="760" rx="42" fill="url(#bg)"/>
+  <circle cx="320" cy="245" r="92" fill="none" stroke="#0D777B" stroke-width="4" opacity=".58"/>
+  <path d="M168 618c22-154 111-232 152-232s130 78 152 232" fill="none" stroke="#C9876B" stroke-width="5" stroke-linecap="round"/>
+  <path d="M245 288c17 16 43 25 75 25s58-9 75-25" fill="none" stroke="#6B7F6A" stroke-width="4" stroke-linecap="round"/>
+  <text x="320" y="677" text-anchor="middle" fill="#496052" font-family="Arial, sans-serif" font-size="19" letter-spacing="3">KHUSHBOO'S PORTRAIT</text>
+</svg>
